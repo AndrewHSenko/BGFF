@@ -1,0 +1,11 @@
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+  background-color: #f695b9;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
