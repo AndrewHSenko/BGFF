@@ -7,7 +7,6 @@ const Header = ({Viewer}) => {
         const headerOffset = Math.min(header.getBoundingClientRect().height, 78); // 78 is the default header's height to fix collapsing height changes
         const origPos = viewer.current[n]?.getBoundingClientRect().top;
         const newPos = origPos + window.scrollY - headerOffset;
-        console.log(origPos, headerOffset, newPos);
         
         window.scrollTo({
           top: newPos,
