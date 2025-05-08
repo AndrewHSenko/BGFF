@@ -1,5 +1,6 @@
-import AVM_one from "./Assets/AVM_One.JPG";
-import AVM_two from "./Assets/AVM_Two.JPG";
+import AVM_one from "./Assets/AVM_One.jpg";
+import AVM_two from "./Assets/AVM_Two.jpg";
+import Demo from "./Assets/demo.MOV";
 
 const AVM = () => {
   return (
@@ -21,10 +22,22 @@ const AVM = () => {
             <img class="w-100 rounded" src={AVM_two} alt="BGFF Machine" />
         </div>
       </div>
-      <h1 class="text-center fs-4 text-dark m-4 text-decoration-underline">Watch this fan-filmed video to see it in action!</h1>
-      <div>
-        <iframe class="w-100 d-block m-auto min-vh-100" src="https://www.youtube.com/embed/iZ8k8fmyMHQ" title="Buy Gum Free Fun!" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      <div class="container-fluid d-flex flex-column justify-content-center">
+        <div class="mx-3">
+          <h1 class="text-center fs-4 text-dark m-4 text-decoration-underline">See our demo here!</h1>
+          <div>
+            <video src={Demo} class="d-none d-lg-block w-25 m-auto" controls="controls" autoplay="false" />
+            <video src={Demo} class="d-block d-lg-none w-75 m-auto" controls="controls" autoplay="false" />
+          </div>
+        </div>
+        <div class="mx-3">
+          <h1 class="text-center fs-4 text-dark m-4 text-decoration-underline">Watch this fan-filmed video to see it in action!</h1>
+          <div>
+            <iframe class="w-100 d-block m-auto min-vh-100" src="https://www.youtube.com/embed/iZ8k8fmyMHQ" title="Buy Gum Free Fun!" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          </div>
+        </div>
       </div>
+      
     </div>
   )
 }
